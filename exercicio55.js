@@ -14,20 +14,17 @@ for(lin=0;lin<10;lin++){
 }
 //Encontra o maior valor dentro da matriz e a posição
 let maior = matriz[0][0]
-let posL  
-let posC  
+let posL
 for(l=0;l<matriz.length;l++){
     for(c=0;c<matriz.length;c++){
         if(matriz[l][c] > maior){
             maior = matriz[l][c]
             posL = l
-            posC = c
         }
     }
 }
 //Encontrando o minimax
-let menor = matriz[posL][0]
-let m
+let menor = matriz[posL][0],posM
 for(m=0;m<=10;m++){
     if(matriz[posL][m] < menor ){
         menor = matriz[posL][m]
