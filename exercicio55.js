@@ -2,7 +2,7 @@
 // encontra o maior elemento da matriz. Escreva um algoritmo que leia uma matriz 10 X 10 de números e encontre seu
 // elemento minimax, mostrando também sua posição.
 
-//Gero os numeros aleatórios e insere na matriz
+//Gero os numeros aleatórios e inserindo na matriz
 const matriz = []
 for(lin=0;lin<10;lin++){
     matriz[lin] = []
@@ -12,7 +12,7 @@ for(lin=0;lin<10;lin++){
         matriz[lin][col] = num
     }
 }
-//Encontra o maior valor dentro da matriz e a posição
+//Encontrando o maior valor dentro da matriz e a posição
 let maior = matriz[0][0],posL
 for(l=0;l<matriz.length;l++){
     for(c=0;c<matriz.length;c++){
