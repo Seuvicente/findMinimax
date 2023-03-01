@@ -4,21 +4,18 @@
 
 //Gero os numeros aleatórios e insere na matriz
 const matriz = []
-
 for(lin=0;lin<10;lin++){
     matriz[lin] = []
     for(col=0;col<10;col++){
         let aleatorio = Math.random()*100
-        let num = aleatorio.toFixed(0) - 1
+        let num = aleatorio.toFixed(0)-1
         matriz[lin][col] = num
     }
 }
-
 //Encontra o maior valor dentro da matriz e a posição
 let maior = matriz[0][0]
 let posL  
 let posC  
-
 for(l=0;l<matriz.length;l++){
     for(c=0;c<matriz.length;c++){
         if(matriz[l][c] > maior){
@@ -28,17 +25,15 @@ for(l=0;l<matriz.length;l++){
         }
     }
 }
-
 //Encontrando o minimax
 let menor = matriz[posL][0]
-
+let m
 for(m=0;m<=10;m++){
     if(matriz[posL][m] < menor ){
-        console.log(menor,matriz[posL][m])
         menor = matriz[posL][m]
+        posM = m
     }
 }
-
 //exibindo resultado
 console.table(matriz)
-console.log("Maior numero: ",maior,",Linha :",posL,", Minimax: ", menor)
+console.log("Maior Elemento:",maior,"Linha:",posL,"Coluna:",posM,"Minimax:",menor)
