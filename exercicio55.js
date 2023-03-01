@@ -23,13 +23,14 @@ for(l=0;l<matriz.length;l++){
     }
 }
 //Encontrando o minimax
-let menor = matriz[posL][0],posM
+let menor = matriz[posL][0],posC
 for(m=0;m<=10;m++){
     if(matriz[posL][m] < menor ){
         menor = matriz[posL][m]
-        posM = m
+        posC = m
     }
 }
 //exibindo resultado
 console.table(matriz)
-console.log("Maior Elemento:",maior,"Linha:",posL,"Coluna:",posM,"Minimax:",menor)
+console.log(`Maior Elemento:${maior} Minimax:${menor} Linha:${posL} Coluna:${posC}`)
+
