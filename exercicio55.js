@@ -13,8 +13,7 @@ for(lin=0;lin<10;lin++){
     }
 }
 //Encontra o maior valor dentro da matriz e a posição
-let maior = matriz[0][0]
-let posL
+let maior = matriz[0][0],posL
 for(l=0;l<matriz.length;l++){
     for(c=0;c<matriz.length;c++){
         if(matriz[l][c] > maior){
